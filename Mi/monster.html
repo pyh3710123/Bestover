@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>小米注册</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<style type="text/css">
+	body{
+	   background: #f5f5f5;
+	}
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+		.box{
+			width: 850px;
+			height: 530px;
+			background: white;
+			position: absolute;
+			top: calc(50% - 265px);
+			left: calc(50% - 425px)
+			
+		}
+		.box input{
+			width: 330px;
+			height: 40px;
+			margin-top: 20px;
+			outline: none;
+			padding: 20px;
+		}
+		.box input:nth-child(1){
+			margin-top: 10px;
+		}
+		.box input:nth-child(5){
+			color: white;
+			background: #ff6700;
+			border: none;
+			padding: 0;
+		}
+		.box input:nth-child(4){
+			width: 190px;
+		}
+		#int{
+			width: 330px;
+			height: 530px;
+			margin: 0 auto;
+			margin-top: 37px;
+		}
+		.box img{
+			margin: 0 auto;
+			display: block;
+		}
+		.box p{
+			font-size: 30px;
+			text-align: center;
+			margin-top: 40px;
+		}
+		#int p{
+			font-size: 12px;
+		}
+		#int a{
+			font-size: 14px;
+			font-weight: bold;
+			text-decoration: none;
+			color: #ff6700;
+		}
+		.check{
+			width: 330px;
+			height: 40px;
+			border: 1px solid #e8e8e8;
+			position: relative;
+			padding: 10px;
+		}
+
+		.checkbox{
+			width: 40px;
+			height: 39px;
+			background: white;
+			position: absolute;
+			right: 0;
+			top: -5px;
+			top: 0;
+			border-left: 1px solid #e8e8e8;
+			border-bottom: 1px solid #e8e8e8;
+
+		}
+		.checkbox i{
+			font-size: 20px;
+			padding-left: 12px;
+			padding-top: 10px;
+		}
+		#list{
+			width: 330px;
+			height: 270px;
+			border: 1px solid #e8e8e8;
+			position: absolute;
+			z-index: 9999;
+			background: white;
+			overflow-y: scroll;
+			display: none;
+		}
+		#list li{
+			width: 310px;
+			height: 40px;
+			border-bottom: 1px solid #e8e8e8;
+			padding-left: 10px;
+			line-height: 40px;
+		}
+		#list li:hover{
+			background: #fcdecc;
+			color: #ff6700;
+		}		
+		#int .active1{
+			display: block;
+		}
+		.inner{
+			width: 280px;
+			height: 40px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			padding: 10px;
+		}
+		#list span{
+			float: right;
+			padding-right: 10px;
+			color:#9d9d9d;
+			font-size: 14px;
+					}
+	#foot {
+		width: 600px;
+		height: 100px;
+		background: #f5f5f5;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -300px;
+	}
+	#foot  li{
+		float: left;
+		list-style: none;
+	}
+	#foot  a{
+		text-decoration: none;
+		font-size: 12px;
+		padding: 0 10px;
+		border-right: 1px solid #e8e8e8;
+		color: #9d9d9d;
+	}
+	#foot  ul{
+		margin-left: 170px;
+		margin-top: 20px;
+	}
+	#foot  p{
+		font-size: 14px;
+		text-align: center;
+		padding-top: 20px;
+		color: #9d9d9d;
+	}
+    #change-num{
+    	width: 125px;
+    	height: 42px;
+    	border: 1px solid #ff6700;
+    	position: absolute;
+    	right: 261px;
+    	top: 298px;
+    }
+     #change-num li{list-style: none;float: left;padding: 8px;}
+      #change-num li:nth-child(1){
+      	color: #e53935;
+      	padding-left: 10px;
+   }
+    #change-num li:nth-child(2){
+      	color: #83c44e;
+      }
+      #change-num li:nth-child(3){
+      	color: #2196f3;
+      }
+     #change-num li:nth-child(4){
+      	color: purple;
+      }
+	</style>
+</head>
+<body>
+   <div class="box">
+      <img src="images/mi.png">
+      <p>注册小米账号</p>
+      <div id="int">
+   	  <div class="check">
+   	     <div class="inner">
+   	     	中国+86
+   	     </div>
+   	  	 <div class="checkbox">
+   	  	 	 <i class="fa fa-angle-down"></i>
+   	  	 </div>
+   	  </div>
+
+   	  <div id="list">
+   	  	  <ul>
+   	  	  </ul>
+   	  </div>
+   	  <input type="text" name="" placeholder="请输入手机号码">
+   	  <input type="text" name="" placeholder="图片验证码">
+   	  <input type="submit" name="" value="立即注册">
+   	 
+   	  <p>注册帐号即表示您同意并愿意遵守小米 <a href="#">用户协议</a>和 <a href="#">隐私政策</a></p>
+   	  </div>	
+   	   <div id="change-num">
+   	  	 	<ul>
+   	  	 		
+   	  	 	</ul>
+   	  	 </div>  
+   </div>
+      <div id="foot">
+   	     <ul>
+   	     	<li>
+   	     	<a href="">简体</a>	
+   	     	</li>
+   	     	<li>
+   	     		<a href="">繁体</a>	
+   	     	</li>
+   	     	<li>
+   	     		<a href="">English</a>	
+   	     	</li>
+   	     	<li>
+   	     		<a href="">常见问题</a>	
+   	     	</li>
+   	     </ul>
+   	     <img src="images/police.png">
+   	     <p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
+   </div>
+  <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+var json={
+	/*注册数据*/
+	 "aere":["中国","中国台湾","中国香港" ,"Brazil","Guatemala","North Korea","Yemen","Zambia","Sweden","Swaziland","Suriname","Sudan","St.Lucia","Sri Lanka","Somali","Singapore","Sierra Leone","Seychelles ","Seychelles","Swaziland","Suriname","Sudan","St.Lucia","Sri Lanka","Somali","Singapore","Sierra Leone","Swaziland","Suriname","Sudan","St.Lucia","Sri Lanka","Somali","Singapore","Sierra Leone","Swaziland","Suriname","Sudan","St.Lucia","Sri Lanka","Somali","Singapore","Sierra Leone","Swaziland","Suriname","Sudan","St.Lucia","Sri Lanka","Somali","Singapore","Sierra Leone","Swaziland","Suriname","Sudan","St.Lucia","Sri Lanka","Somali","Singapore","Sierra Leone","Swaziland","Suriname","Sudan","St.Lucia","Sri Lanka","Somali","Singapore","Sierra Leone","Swaziland","Suriname","Sudan","St.Lucia","Sri Lanka","Somali","Singapore","Sierra Leone","Swaziland","Suriname","Sudan","St.Lucia","Sri Lanka","Somali","Singapore","Sierra Leone","Swaziland","Suriname","Sudan","St.Lucia","Sri Lanka","Somali","Singapore","Sierra Leone","Swaziland","Suriname","Sudan","St.Lucia","Sri Lanka","Somali","Singapore","Sierra Leone"]
+	 ,
+	 "num":["+322","+32","+342","+542","+322","+102","+321","+09","+23","+322","+32","+342","+542","+322","+102","+321","+09","+23","+322","+32","+342","+542","+322","+102","+321","+09","+23","+322","+32","+342","+542","+322","+102","+321","+09","+23","+322","+32","+342","+542","+322","+102","+321","+09","+23","+322","+32","+342","+542","+322","+102","+321","+09","+23","+322","+32","+342","+542","+322","+102","+321","+09","+23","+322","+32","+342","+542","+322","+102","+321","+09","+23","+322","+32","+342","+542","+322","+102","+321","+09","+23","+322","+32","+342","+542","+322","+102","+321","+09","+23","+322","+32","+342","+542","+322","+102","+321","+09","+23"],
+	 "str":["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","r","s","t","u","v","w","x","y","z","蓖","簼","漡","曠","嚟","蓖","簼","漡","曠","嚟","蓖","簼","漡","曠","嚟"]
+}
+  var oList=document.getElementById("list");
+  var oBtn=document.getElementsByClassName("check")[0];
+  var oIner=oBtn.getElementsByTagName("div")[0];
+  var bol=true;
+  var oInt=document.getElementById("int");
+  var aList=oList.getElementsByTagName("li");
+  var oUl=oList.getElementsByTagName("ul")[0];
+  var oNum=document.getElementById("change-num");
+  var oUl1=oNum.getElementsByTagName("ul")[0];
+  var oInpt2=oInt.getElementsByTagName("input")[2];
+  var oInpt1=oInt.getElementsByTagName("input")[1];
+  var oInpt0=oInt.getElementsByTagName("input")[0];
+  var aLiNum=oUl1.children;
+  var Reg=/^1(\d){10}$/; 
+  /*动态添加li*/
+  for (var i = 0; i < json.aere.length; i++) {
+	  oUl.innerHTML+="<li>"+json.aere[i]+"<span>"+json.num[i]+"</span>"+"</li>";
+}
+/*弹出框*/
+  for (var i = 0; i < aList.length; i++) {
+  	     aList[i].onclick=function(){           
+  	     	  that=this.innerHTML;
+  	     	  detCls(oList,"active1")
+        	  bol=true;
+              oIner.innerHTML=that;
+  	     }
+  }  
+     oBtn.onclick=function(){
+        if (bol) {
+        	addCls(oList,"active1")
+        	bol=false;
+        }else{
+        	detCls(oList,"active1")
+        	bol=true;
+        }       	
+   }
+   /*随机生成数字*/
+   	 for (var i = 0; i < 4; i++) { 
+      oUl1.innerHTML+="<li>"+parseInt(Math.random()*10) +"</li>";
+    }  
+/*点击生成*/
+     oNum.onclick=function(){
+   	 var arr=[];
+   	 oUl1.innerHTML="";
+      for (var i = 0; i <2 ; i++) {
+      arr.push(parseInt(Math.random()*30));
+      oUl1.innerHTML+="<li>"+json.str[arr[i]]+"</li>";
+    } 
+     for (var i = 2; i < 4; i++) {
+     	arr.push(parseInt(Math.random()*10));
+     	oUl1.innerHTML+="<li>"+arr[i]+"</li>";
+     }
+ 
+ }
+ /*注册验证*/
+ oInpt2.onclick=function(){
+ 	var value=oInpt1.value;
+ 	var str="";
+ 	var value0=oInpt0.value;
+ 	for (var i = 0; i < aLiNum.length; i++) {
+ 		  str+=aLiNum[i].innerHTML;
+ 	}
+
+   if (value==str&&Reg.test(value0)) {
+   	   alert("注册成功")   
+   }else if(value==""){
+   	   alert("手机号码不能为空")
+   }
+   else{
+   	   alert("你输入的验证码或者手机号码正确")
+   }  
+ 	           
+ }
+</script>
+</body>
+</html>

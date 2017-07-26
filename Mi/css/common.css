@@ -1,0 +1,43 @@
+
+@charset"utf-8";
+/*===============*/
+/*公共样式*/
+/*===========================
+时间：7月17日
+人员：周桐
+*/
+
+html,body{
+	font-size: 16px;
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+
+}
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix{
+	clear: both;
+}
+.clearfix:before,.clearfix:after{
+	display: table;
+	content: "";
+}
+a,i{
+   text-decoration: none;
+   color: gray;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+li{
+	list-style: none;
+}
